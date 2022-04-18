@@ -13,7 +13,7 @@ building = pygame.Rect(5,200,30,400)
 
 #create a funtion drawBuilding
 def draw_building():
-    building = pygame.Rect(5,200,30,400)
+  global height
     pygame.draw.rect(screen,[255,255,255],building)
     building.height=random.randint(100,500)
     building.y=height- building.height
